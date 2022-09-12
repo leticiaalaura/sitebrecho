@@ -5,8 +5,8 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'home.html', context={"produtos": [
-        {"produto": "Blazer listrado", "preco": 59.90, "descricao": "Blazer listrado com forro"},
-        {"produto": "Vestido menta", "preco": 49.90, "descricao": "Vestido cor menta e estampa Animal Print"},
+        {"produto": "Blazer listrado", "preco": 59.90, "descricao": "Blazer listrado com forro", "foto": 'img/blazer.png'},
+        {"produto": "Vestido menta", "preco": 49.90, "descricao": "Vestido cor menta e estampa Animal Print", "foto": 'img/vestido.png'},
         {"produto": "Saia midi onça", "preco": 69.90, "descricao": "Saia midi tecido listrado estampa onça"},]
                                                  })
 

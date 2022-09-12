@@ -17,16 +17,24 @@
 				<div class="justify-center">
 					{% for produto in produtos %}
 					<div class="max-w-sm rounded overflow-hidden shadow-lg">
-						<img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
+						<img src="{% static produto.foto %}" class="img-thumbnail float-left mr-3"/>
 						<div class="px-6 py-4">
 							<div class="font-bold text-xl mb-2">{{ produto.produto }}</div>
 							<p class="text-gray-700 text-base">
 								{{ produto.descricao }}
 							</p>
 							<p> {{ produto.preco }}</p>
+							<p> {{ produto.foto }}</p>
 						</div>
 					</div>
-					{% endfor %}
+					<div class="inline-block relative w-64">
+						<select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+							<option> P </option>
+    						<option> M </option>
+    						<option> G </option>
+  						</select>
+					</div>
+				{% endfor %}
 				</div>
 			</div>
 		</section>
