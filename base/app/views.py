@@ -2,6 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+from django.urls import reverse
+
 
 def home(request):
     return render(request, 'home.html', context={"produtos": [
@@ -13,6 +15,5 @@ def home(request):
  # C:\Users\letic\PycharmProjects\sitebrecho\base\app\templates\homee.html
 
 # C:\Users\letic\PycharmProjects\sitebrecho\base\theme\templates\theme\base.html
-
 
 
