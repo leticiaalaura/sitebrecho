@@ -5,6 +5,6 @@ from base.app.models import Produto
 
 def home(request):
     produtos = {'produtos': Produto.objects.all()}
-    return render(request, 'home.html', context=produtos)
+    return render(request, 'theme/base.html', context=produtos)
 
 
