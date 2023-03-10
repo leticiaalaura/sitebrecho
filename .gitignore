@@ -135,3 +135,6 @@ staticfiles
 #postgres files for local developement
 
 .pgdata
+/static/css/
+/media/
+/jstools/node_modules/
